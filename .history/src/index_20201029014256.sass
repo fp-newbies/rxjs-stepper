@@ -1,0 +1,26 @@
+html
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+
+.stepper
+    list-style: none
+    counter-reset: stepper
+    padding-left: 30px
+    &-item
+        position: relative
+        padding: 0
+        &:before
+            content: counter(stepper)
+            counter-increment: stepper
+            position: absolute
+            top: 0
+            left: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 20px
+            height: 20px
+            border-radius: 10em
+            background-color: #333
+            color: #fff
+            font-size: 10px
